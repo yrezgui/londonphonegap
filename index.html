@@ -6,36 +6,16 @@
     <title>London Phonegap</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
   <body>
   <header>
-    <a href="">
-      <h1><img src="cordova.png"> London Phonegap</h1>
+    <a href="/">
+      <h1><img src="cordova.png" style="vertical-align: middle;"> London Phonegap</h1>
       <p>Let's hack your phone with some HTML5 and a cup of tea !</p>
     </a>
   </header>
-
-  <div id="banner">
-    <div class="banner-inner">
-      <span id="logo"></span>
-
-      <a href="https://github.com/mattgraham/SCSS--Clean-Button" class="button fork"><strong>Fork On GitHub</strong></a>
-      <div class="downloads">
-        <span>Downloads:</span>
-        <ul>
-          <li><a href="https://github.com/mattgraham/SCSS--Clean-Button/zipball/master" class="button">ZIP</a></li>
-          <li><a href="https://github.com/mattgraham/SCSS--Clean-Button/tarball/master" class="button">TAR</a></li>
-        </ul>
-      </div>
-    </div>
-  </div><!-- end banner -->
 
   <div class="wrapper">
     <nav>
@@ -75,84 +55,9 @@
 
       <p>Your code should be beautiful, or at least that's what the designers think. </p>
 
-      <div class="highlight">
-<pre><span class="nb">require</span> <span class="s1">'adapter/memory'</span>
-<span class="nb">require</span> <span class="s1">'toystore'</span>
-
-<span class="k">class</span> <span class="nc">User</span>
-<span class="kp">include</span> <span class="no">Toy</span><span class="o">::</span><span class="no">Store</span>
-<span class="n">adapter</span> <span class="ss">:memory</span><span class="p">,</span> <span class="p">{}</span>
-
-<span class="n">attribute</span> <span class="ss">:name</span><span class="p">,</span> <span class="nb">String</span>
-<span class="k">end</span>
-</pre>
-      </div>
-
       <p>So, this is what HTML Code looks like</p>
 
-      <div class="highlight">
-<pre><span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"header"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;nav&gt;</span>
-         <span class="nt">&lt;li&gt;</span>Home<span class="nt">&lt;/li&gt;</span> 
-         <span class="nt">&lt;li&gt;</span>About Us<span class="nt">&lt;/li&gt;</span>
-         <span class="nt">&lt;li&gt;</span>Contact<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/nav&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</pre>
-      </div>
-
       <p>And, then maybe some CSS</p>
-
-      <div class="highlight">
-<pre>
-<span class="nt">body</span> <span class="p">{</span>
-  <span class="k">font</span><span class="o">:</span><span class=
-  "m">14px</span><span class="o">/</span><span class="m">22px</span> <span class=
-  "s1">'Quattrocento Sans'</span><span class="o">,</span> <span class=
-  "s2">"Helvetica Neue"</span><span class="o">,</span> <span class=
-  "n">Helvetica</span><span class="o">,</span> <span class=
-  "n">Arial</span><span class="o">,</span> <span class=
-  "k">sans-serif</span><span class="p">;</span>
-  <span class="k">color</span><span class="o">:</span><span class=
-  "m">#666</span><span class="p">;</span>
-  <span class="k">font-weight</span><span class=
-  "o">:</span><span class="m">300</span><span class="p">;</span>
-  <span class="k">margin</span><span class="o">:</span> <span class=
-  "m">0px</span><span class="p">;</span>
-  <span class="k">padding</span><span class="o">:</span><span class=
-  "m">0px</span> <span class="m">0</span> <span class=
-  "m">20px</span> <span class="m">0px</span><span class="p">;</span>
-  <span class="k">background</span><span class=
-  "o">:</span> <span class="sx">url(../images/body-background.png)</span> <span class="m">#eae6d1</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nt">h1</span><span class="o">,</span> <span class=
-  "nt">h2</span><span class="o">,</span> <span class="nt">h3</span><span class=
-  "o">,</span> <span class="nt">h4</span><span class="o">,</span> <span class=
-  "nt">h5</span><span class="o">,</span> <span class="nt">h6</span> <span class=
-  "p">{</span>
-  <span class="k">color</span><span class="o">:</span><span class=
-  "m">#333</span><span class="p">;</span>
-  <span class="k">margin</span><span class="o">:</span><span class=
-  "m">0</span> <span class="m">0</span> <span class="m">10px</span><span class=
-  "p">;</span>
-<span class="p">}</span>
-
-<span class="nt">p</span><span class="o">,</span> <span class=
-  "nt">ul</span><span class="o">,</span> <span class="nt">ol</span><span class=
-  "o">,</span> <span class="nt">table</span><span class="o">,</span> <span class=
-  "nt">pre</span><span class="o">,</span> <span class="nt">dl</span> <span class=
-  "p">{</span>
-  <span class="k">margin</span><span class="o">:</span><span class=
-  "m">0</span> <span class="m">0</span> <span class="m">20px</span><span class=
-  "p">;</span>
-<span class="p">}</span>
-</pre>
-      </div>
 
 
       <p>Inline code would look a little different. <code>We want you to see</code> where it is, but its going to be a little less noticeable. It might also be as simple as <code>:hover</code> and as unique as <code>:first-child</code>. It is up to you. </p>
@@ -170,6 +75,5 @@
         <p><span class="small">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
   </body>
 </html>
