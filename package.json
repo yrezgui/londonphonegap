@@ -1,0 +1,34 @@
+{
+  "name": "londonphonegap",
+  "version": "0.1.0",
+  "description": "Website of London Phonegap Meetup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yrezgui/londonphonegap.git"
+  },
+  "keywords": [
+    "phonegap",
+    "cordova",
+    "meetup",
+    "london",
+    "mobile",
+    "html5"
+  ],
+  "author": "Yacine Rezgui <rezgui.y@gmail.com>",
+  "license": "Apache Licence v2",
+  "bugs": {
+    "url": "https://github.com/yrezgui/londonphonegap/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-less": "~1.2.3",
+    "gulp-jade": "~0.4.2"
+  },
+  "dependencies": {
+    "express": "~3.5.1"
+  }
+}
